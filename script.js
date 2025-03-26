@@ -9,11 +9,14 @@ window.addEventListener('load', () => {
 document.querySelectorAll('.nav-menu a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
+        const navMenu = document.querySelector('.nav-menu');
         if (href.startsWith('#')) {
             e.preventDefault();
             document.querySelector(href).scrollIntoView({
                 behavior: 'smooth'
             });
+            // Close the menu after clicking a link
+            navMenu.classList.remove('active');
         }
     });
 });
