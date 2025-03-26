@@ -165,23 +165,23 @@ header .container {
     animation: fadeInUp 1.2s ease-in-out;
 }
 
-/* Typewriter (Base Styles) */
+/* Typewriter (Base Styles for Mobile) */
 .typewriter {
     font-size: 20px;
     color: #e0e0e0;
-    overflow: hidden;
-    border-right: 3px solid #00d4ff;
-    white-space: normal; /* Allow wrapping on mobile */
+    white-space: normal; /* Allow wrapping */
     max-width: 100%; /* Prevent overflow */
-    animation: typing 4s steps(40, end) infinite, blink 0.75s step-end infinite;
+    line-height: 1.4; /* Improve readability */
 }
 
-/* Desktop Adjustment */
+/* Desktop Animation */
 @media (min-width: 769px) {
     .typewriter {
         font-size: 26px;
         white-space: nowrap; /* No wrapping on desktop */
+        overflow: hidden;
         border-right: 4px solid #00d4ff;
+        animation: typing 4s steps(40, end) infinite, blink 0.75s step-end infinite;
     }
 }
 
