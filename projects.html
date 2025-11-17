@@ -1,0 +1,136 @@
+<!-- projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Jai Desai | ML Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-nav">
+        <nav class="nav-container">
+            <div class="logo-calligraphy">Jai Desai</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="research.html">Research & Blogs</a></li>
+                <li><a href="freelance.html">Freelance</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="resume.pdf" class="resume-btn" download>Resume</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Real-Time Face Detection (Edge Deployment)</h3>
+                        <p>Hybrid CNN + Haar for low-light robustness on FERET dataset.</p>
+                        <div class="project-demo">
+                            <p><strong>What I Did:</strong></p>
+                            <ul>
+                                <li>Implemented ensemble model achieving 95% accuracy on diverse lighting conditions.</li>
+                                <li>Optimized inference on Jetson Nano hardware, reducing latency by 3× via ONNX export.</li>
+                                <li>Deployed as Streamlit app for real-time security monitoring.</li>
+                            </ul>
+                            <em>Demo: Upload image below—watch detection in action.</em>
+                            <div class="demo-placeholder">Live Demo Embed Here (e.g., Gradio/Streamlit iframe)</div>
+                        </div>
+                        <div class="project-stack">PyTorch, OpenCV, ONNX</div>
+                        <div class="project-links">
+                            <a href="https://github.com/jaid28/face-detection" target="_blank">Code</a>
+                        </div>
+                    </article>
+                    <!-- Repeat for other projects as in previous code -->
+                    <article class="project-card">
+                        <h3>Multilingual Voice Assistant</h3>
+                        <p>PyTorch STT with fine-tuned Whisper for 3 languages.</p>
+                        <div class="project-demo">
+                            <p><strong>What I Did:</strong></p>
+                            <ul>
+                                <li>Fine-tuned Whisper model on custom multilingual dataset, boosting speed by 40%.</li>
+                                <li>Integrated speech-to-text with intent recognition for query handling.</li>
+                                <li>Hosted on Hugging Face Spaces for interactive testing.</li>
+                            </ul>
+                            <em>Demo: Speak into mic—get responses in Hindi/English/Tamil.</em>
+                            <div class="demo-placeholder">Live Voice Demo Embed Here</div>
+                        </div>
+                        <div class="project-stack">PyTorch, Whisper, Gradio</div>
+                        <div class="project-links">
+                            <a href="https://github.com/jaid28/voice-assistant" target="_blank">Code</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Fraud Anomaly Detector</h3>
+                        <p>Isolation Forest + XGBoost on transaction data, API-served.</p>
+                        <div class="project-demo">
+                            <p><strong>What I Did:</strong></p>
+                            <ul>
+                                <li>Built end-to-end pipeline with 98% precision on imbalanced datasets.</li>
+                                <li>Deployed as FastAPI endpoint for real-time scoring.</li>
+                                <li>Handled 10K+ txns/min with monitoring dashboard.</li>
+                            </ul>
+                            <em>Demo: Input txn data—see anomaly flags.</em>
+                            <div class="demo-placeholder">Live API Demo Embed Here</div>
+                        </div>
+                        <div class="project-stack">Scikit-Learn, XGBoost, FastAPI</div>
+                        <div class="project-links">
+                            <a href="https://github.com/jaid28/fraud-detection" target="_blank">Code</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>BERT Sentiment Pipeline</h3>
+                        <p>Transformers for social monitoring, freelance-validated.</p>
+                        <div class="project-demo">
+                            <p><strong>What I Did:</strong></p>
+                            <ul>
+                                <li>Fine-tuned BERT for 92% F1 on tweet sentiment, processing 1K+/min.</li>
+                                <li>Added RAG for context-aware analysis.</li>
+                                <li>Integrated Gradio UI for client feedback loops.</li>
+                            </ul>
+                            <em>Demo: Paste tweet—get sentiment score.</em>
+                            <div class="demo-placeholder">Live Sentiment Demo Embed Here</div>
+                        </div>
+                        <div class="project-stack">Hugging Face, BERT, Gradio</div>
+                        <div class="project-links">
+                            <a href="https://github.com/jaid28/sentiment-analyzer" target="_blank">Code</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Crop Yield Forecaster</h3>
+                        <p>LSTM on satellite time-series for climate-adaptive agriculture.</p>
+                        <div class="project-demo">
+                            <p><strong>What I Did:</strong></p>
+                            <ul>
+                                <li>Developed LSTM model hitting 85% accuracy on NASA satellite data.</li>
+                                <li>Incorporated climate variables for resilient predictions.</li>
+                                <li>Created Binder notebook for interactive forecasting.</li>
+                            </ul>
+                            <em>Demo: Select region/date—view yield forecast.</em>
+                            <div class="demo-placeholder">Interactive Notebook Embed Here</div>
+                        </div>
+                        <div class="project-stack">TensorFlow, LSTM, Pandas</div>
+                        <div class="project-links">
+                            <a href="https://github.com/jaid28/env-ai-predictor" target="_blank">Code</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jai Desai</p>
+        </div>
+    </footer> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
